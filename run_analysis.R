@@ -4,7 +4,6 @@
 
 # 1. Merge the training and the test sets to create one data set.
 
-# Merge 
 trainX <- read.table("train/X_train.txt")
 testX <- read.table("test/X_test.txt")
 X <- rbind(trainX, testX)
