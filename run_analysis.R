@@ -38,7 +38,6 @@ names(y) <- "activity"
 # 4. Appropriately labels the data set with descriptive variable names. 
 names(subject) <- "subject"
 cleaned <- cbind(subject, y, X)
-write.table(cleaned, "merged_clean_data.txt") #, row.name=FALSE)
 
 # 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 unique_subjects <- unique(subject)[,1]
